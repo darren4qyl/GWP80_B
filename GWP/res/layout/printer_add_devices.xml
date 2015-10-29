@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.GWP"
+    android:id="@+id/pad_main" >
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_special_disease_circle"
+            android:drawableLeft="@drawable/printer_add_devices"
+            android:drawablePadding="15dp"
+            android:text="@string/printer_add_devices_button_add" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <com.printsharelib.listview3d.util.ListView3D
+            android:id="@+id/my_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.printsharelib.listview3d.util.ListView3D>
+    </LinearLayout>
+
+</LinearLayout>

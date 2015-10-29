@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default -->
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="half_default_margin">8dp</dimen>
+    <dimen name="actionBarSize">56dp</dimen>
+    <dimen name="big_text_size">12sp</dimen>
+    
+    
+    <dimen name="directory_browser_item_size">40dp</dimen>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- bluetooth print -->
+    <dimen name="bluetooth_print_circle_menu_width">300dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_height">300dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_child_width">80dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_child_height">80dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_child_icon_width">50dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_child_icon_height">50dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_icon1_width">80dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_icon1_height">80dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_icon2_width">74dip</dimen>
+    <dimen name="bluetooth_print_circle_menu_icon2_height">74dip</dimen>
+    <!-- 页面字体大小  -->
+	<dimen name="text_size">14sp</dimen>
+	<dimen name="title_text_size">16sp</dimen>
+	<dimen name="alert_dialog_title_text_size">16sp</dimen>
+	<dimen name="alert_dialog_text_size">14sp</dimen>
+	<dimen name="dividerheight">1dip</dimen>
+	
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.printshare"
+    android:versionCode="2"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:name="com.printshare.PrintApplication"
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_logo_w"
+        android:theme="@style/Theme.GWP.NoTitleBar"
+        android:largeHeap="true"
+         >
+        <activity
+            android:name=".ui.MainUiActivity"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.GWP"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PreviewPrinter"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.GWP"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".ui.PreferencesActivity"
+            android:theme="@style/Theme.GWP" />
+        <activity android:name=".ui.AddPrinterDevices"
+            android:theme="@style/Theme.GWP" />
+        <activity
+            android:name="com.printshare.bluetooth.DeviceListActivity"
+            android:theme="@style/Theme.GWP" />
+        <activity
+            android:name="com.printshare.test.TestActivity"
+            android:theme="@style/Theme.GWP" />
+        
+    </application>
+
+</manifest>

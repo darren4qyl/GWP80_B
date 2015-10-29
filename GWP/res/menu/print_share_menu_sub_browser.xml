@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:GWP="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:title="@string/menu_browser_printer"
+        android:icon="@drawable/printer_orange"
+        android:id="@+id/psm_menu_addprinter"
+        GWP:showAsAction="ifRoom|withText|collapseActionView">
+<!--         <menu> -->
+<!--             <item -->
+<!--                 android:id="@+id/ml_menu_sortby_name" -->
+<!--                 android:title="@string/sortby_name" /> -->
+<!--             <item -->
+<!--                 android:id="@+id/ml_menu_sortby_length" -->
+<!--                 android:title="@string/sortby_length" /> -->
+<!--             <item -->
+<!--                 android:id="@+id/ml_menu_sortby_date" -->
+<!--                 android:title="@string/sortby_date" /> -->
+<!--         </menu> -->
+    </item>
+    
+    
+</menu>

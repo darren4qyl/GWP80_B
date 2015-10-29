@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="15dip" >
+	<LinearLayout android:id="@+id/layout_top"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/iv_photo">
+        <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffFFFFFF"
+        android:textSize="18sp" />
+        <TextView
+        android:id="@+id/tv_name_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dip" />
+    </LinearLayout>
+	</LinearLayout>
+    
+    <TextView android:id="@+id/tv_showinfomation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_top"
+        android:text="长按按钮选择更多操作，（修改名称，删除，设置为默认打印机）"
+        android:visibility="visible"/>
+
+</RelativeLayout>

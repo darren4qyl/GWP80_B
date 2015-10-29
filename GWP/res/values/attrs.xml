@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingPaneLayout">
+        <attr name="overhangSize" format="dimension" />
+    </declare-styleable>
+    <attr name="item_footer" format="reference|color" />
+    <attr name="background_actionbar" format="reference|color" />
+    <attr name="background_menu" format="reference|color" />
+    <attr name="background_menu_divider" format="reference|color" />
+    <attr name="background_player" format="reference|color" />
+    <attr name="font_default" format="reference|color" />
+    <attr name="font_light" format="reference|color" />
+    <attr name="toolbar_popup_style" format="reference" />
+    <attr name="list_menu" format="reference|color" />
+    <attr name="ic_menu_open_local" format="reference" />
+    <attr name="ic_menu_home" format="reference" />
+    <attr name="shadow_bottom_9patch" format="reference"/>
+    <attr name="list_title" format="reference|color" />
+    <attr name="list_subtitle" format="reference|color" />
+    <attr name="shadow_top_9patch" format="reference"/>
+    <attr name="file_list_item_print" format="reference"/>
+    <declare-styleable name="Circle">
+        <attr name="circleBackground" format="integer" />
+        <attr name="firstChildPosition">
+            <enum name="East" value="0" />
+            <enum name="South" value="90" />
+            <enum name="West" value="180" />
+            <enum name="North" value="270" />
+        </attr>
+        <attr name="rotateToCenter" format="boolean" />
+        <attr name="isRotating" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="name" format="string" />
+    </declare-styleable>
+    
+    <!-- DiaLog集合Start -->
+    <declare-styleable name="com.casee.adsdk.CaseeAdView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="keywords" format="string" />
+        <attr name="refreshInterval" format="integer" />
+        <attr name="vertical" format="boolean" />
+    </declare-styleable>
+    <!-- DiaLog集合End -->
+    
+    <!-- 小米启动 -->
+     <declare-styleable name="gridview">
+            <attr name="mi_textColor" format="color" />
+            <attr name="mi_textSize" format="dimension" />
+        </declare-styleable>
+    <!-- 小米启动 -->
+    <attr name="ic_menu_preferences" format="reference" />
+</resources>

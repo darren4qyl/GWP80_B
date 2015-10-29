@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<!--***********************************主题     1******************************************* -->
+    <style name="Theme.GWP" parent="Theme.GWP.7"/>
+    <style name="Theme.GWP.7" parent="Theme.GWP.Apearance">
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="drawerArrowStyle">@style/ActionBar.ArrowToggle</item>
+    </style>
+    <style name="Theme.GWP.Apearance" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="background_actionbar">@color/orange500</item>
+        <item name="background_menu">@color/grey200</item>
+        <item name="toolbar_popup_style">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="list_menu">@color/grey600</item>
+        <item name="ic_menu_open_local">@drawable/ic_menu_open</item>
+        <item name="ic_menu_home">@drawable/ic_menu_open</item>
+        <item name="shadow_bottom_9patch">@drawable/shadow_bottom</item>
+        <item name="list_title">@color/list_title</item>
+        <item name="list_subtitle">@color/grey400</item>
+        <item name="shadow_top_9patch">@drawable/shadow_top</item>
+        <item name="file_list_item_print">@drawable/printer_orange</item>
+        <item name="ic_menu_preferences">@drawable/ic_menu_preferences</item>
+    </style>
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>   
+        <item name="android:windowBackground">@color/transparent</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+    </style>
+<!--***********************************主题     1******************************************* -->    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <style name="ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="titleTextStyle">@style/ActionBar.Text</item>
+    </style>
+
+    <style name="ActionBar.Text" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ActionBar.ArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+    <style name="Toolbar.GWP" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    
+    <style name="Theme.GWP.NoTitleBar" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="item_footer">@color/grey300</item>
+        <item name="background_menu_divider">@color/grey400</item>
+        <item name="background_menu">@color/grey300</item>
+        <item name="background_player">@color/grey100</item>
+        <item name="font_default">@color/grey900</item>
+        <item name="font_light">@color/grey600</item>
+        <item name="android:windowBackground">@color/grey200</item>
+    </style>
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
+    </style>
+</resources>

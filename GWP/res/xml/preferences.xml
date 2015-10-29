@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/printer_general_prefs_category" >
+        <PreferenceScreen
+            android:key="printer_add_devices"
+            android:summary="@string/printer_add_devices_summary"
+            android:title="@string/printer_add_devices" />
+        <PreferenceScreen
+            android:key="printer_select_default_devices"
+            android:summary="@string/printer_select_default_devices_summary"
+            android:title="@string/printer_select_default_devices" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/printer_print_parameter_prefs_category" >
+        <SwitchPreference
+            android:key="printer_print_padding"
+            android:summary="@string/printer_print_padding_summary"
+            android:title="@string/printer_print_padding" />
+
+        <EditTextPreference
+            android:dependency="printer_print_padding"
+            android:dialogTitle="@string/printer_print_padding_left_dialog_title"
+            android:key="printer_print_padding_left"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/printer_print_padding_left_summary"
+            android:title="@string/printer_print_padding_left"/>
+        <EditTextPreference
+            android:dependency="printer_print_padding"
+            android:dialogTitle="@string/printer_print_padding_top_dialog_title"
+            android:key="printer_print_padding_top"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/printer_print_padding_top_summary"
+            android:title="@string/printer_print_padding_top" />
+        <EditTextPreference
+            android:dependency="printer_print_padding"
+            android:dialogTitle="@string/printer_print_padding_right_dialog_title"
+            android:key="printer_print_padding_right"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/printer_print_padding_right_summary"
+            android:title="@string/printer_print_padding_right" />
+        <EditTextPreference
+            android:dependency="printer_print_padding"
+            android:dialogTitle="@string/printer_print_padding_bottom_dialog_title"
+            android:key="printer_print_padding_bottom"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/printer_print_padding_bottom_summary"
+            android:title="@string/printer_print_padding_bottom" />
+
+        <SwitchPreference
+            android:key="printer_print_bookbinding"
+            android:summary="@string/printer_print_bookbinding_summary"
+            android:title="@string/printer_print_bookbinding"
+            android:shouldDisableView="false" />
+
+        <EditTextPreference
+            android:dependency="printer_print_bookbinding"
+            android:dialogTitle="@string/printer_print_bookbinding_line_dialog_title"
+            android:key="printer_print_bookbinding_line"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/printer_print_bookbinding_line_summary"
+            android:title="@string/printer_print_bookbinding_line" />
+
+        <ListPreference
+            android:dependency="printer_print_bookbinding"
+            android:dialogTitle="@string/printer_print_bookbinding_line_position_dialog_title"
+            android:entries="@array/printer_print_bookbinding_line_position_list"
+            android:entryValues="@array/printer_print_bookbinding_line_position_values"
+            android:key="printer_print_bookbinding_line_position"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/printer_print_bookbinding_line_position_summary"
+            android:title="@string/printer_print_bookbinding_line_position" />
+        <ListPreference
+            android:dialogTitle="@string/printer_print_picture_property_dialog_title"
+            android:entries="@array/printer_print_picture_property_list"
+            android:entryValues="@array/printer_print_picture_property_values"
+            android:key="printer_print_picture_property"
+            android:summary="@string/printer_print_picture_property_summary"
+            android:title="@string/printer_print_picture_property" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/printer_other_prefs_category" >
+    </PreferenceCategory>
+
+</PreferenceScreen>

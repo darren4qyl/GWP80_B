@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.printshare.widget.HackyDrawerLayout
+        android:id="@+id/root_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nextFocusDown="@+id/ml_menu_search"
+        android:nextFocusForward="@+id/ml_menu_search"
+        android:nextFocusLeft="@+id/ml_menu_search"
+        android:nextFocusRight="@+id/ml_menu_search"
+        android:nextFocusUp="@+id/ml_menu_search"
+        >
+
+        <com.printshare.widget.SlidingPaneLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:printshare="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            printshare:overhangSize="0dp" >
+
+            <com.printshare.widget.ContentLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/background_actionbar" />
+
+                
+                <TextView android:id="@+id/maintest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试页面"
+                    android:textSize="45sp"/>
+                
+            </com.printshare.widget.ContentLinearLayout>
+			
+        </com.printshare.widget.SlidingPaneLayout>
+        <!-- The navigation drawer -->
+
+        <ListView
+            android:id="@+id/sidelist"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="?attr/background_menu"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:focusable="true"
+            android:nextFocusDown="@+id/settings"
+            android:nextFocusForward="@id/sidelist"
+            android:nextFocusLeft="@id/sidelist"
+            android:nextFocusRight="@id/sidelist"
+            android:nextFocusUp="@id/sidelist"
+            android:paddingTop="?attr/actionBarSize" >
+        </ListView>
+    </com.printshare.widget.HackyDrawerLayout>
+
+    <include layout="@layout/toolbar"/>
+
+</FrameLayout>

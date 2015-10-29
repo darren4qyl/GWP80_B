@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Print Share</string>
+    <string name="addprinter"> </string>
+    <string name="no_sure">NO sure</string>
+    <string name="title">Title</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="STR_PERCENT">00%</string>
+
+    <!-- ===========================fragment index================================ -->
+    <string name="fragment_index_tv_show_list_file">Display history print file</string>
+    <string name="fragment_index_tv_no_history_file">No history print file display</string>
+
+    <!-- ===========================left menu================================ -->
+    <string name="menu_home">Home</string>
+    <string name="menu_open_local">Open Local File</string>
+    <string name="menu_test">test</string>
+    <string name="directory_empty">Directory is empty</string>
+
+    <!-- ===========================left menu browser================================ -->
+    <string name="menu_browser_printer">打印</string>
+    <string name="network_connection_needed">local network no connect。</string>
+    <string name="cover_art">Album Cover</string>
+    <string name="delete">delete</string>
+    <string name="print">print</string>
+    <string name="info">infomation</string>
+    <string name="internal_memory">内部存储</string>
+    <string name="directories">目录</string>
+    <string name="add_custom_path">添加自定义路径</string>
+    <string name="add_custom_path_description">输入要扫描的其他自定义目录:</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="directorynotfound">目录路径“%1$s”不存在。</string>
+
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d results have been found.</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d 个打印文 件</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d 个子文件夹</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d 个打印文件</item>
+    </plurals>
+    <plurals name="videos_quantity">
+        <item quantity="other">%d 个打印 文件</item>
+    </plurals>
+
+    
+    
+    <!-- Preferences -->
+    <string name="preferences">设置</string>
+    <string name="printer_general_prefs_category">打印机操作</string>
+    <string name="printer_add_devices">添加打印机设备</string>
+    <string name="printer_add_devices_summary">添加从未使用过的打印设备，usb或者蓝牙打印机</string>
+    <string name="printer_select_default_devices">选择默认打印设备</string>
+    <string name="printer_select_default_devices_summary">从打印机设备列表中选择一个设备作为默认使用设备</string>
+    <string name="printer_print_parameter_prefs_category">打印参数设置</string>
+    <string name="printer_print_padding">打印边距设置</string>
+    <string name="printer_print_padding_summary">设置打印内容与上下左右的边距</string>
+    <string name="printer_print_padding_left">设置左边距</string>
+    <string name="printer_print_padding_left_dialog_title">请输入左边距</string>
+    <string name="printer_print_padding_left_summary">左边距为：</string>
+    <string name="printer_print_padding_top">设置上边距</string>
+    <string name="printer_print_padding_top_dialog_title">请输入上边距</string>
+    <string name="printer_print_padding_top_summary">上边距为：</string>
+    <string name="printer_print_padding_right">设置右边距</string>
+    <string name="printer_print_padding_right_dialog_title">请输入右边距</string>
+    <string name="printer_print_padding_right_summary">右边距为：</string>
+    <string name="printer_print_padding_bottom">设置下边距</string>
+    <string name="printer_print_padding_bottom_dialog_title">请输入下边距</string>
+    <string name="printer_print_padding_bottom_summary">下边距为：</string>
+    <string name="printer_print_bookbinding">装订设置</string>
+    <string name="printer_print_bookbinding_summary">设置装订线宽度以及位置</string>
+    <string name="printer_print_bookbinding_line">装订线</string>
+    <string name="printer_print_bookbinding_line_summary">装订线宽度：</string>
+    <string name="printer_print_bookbinding_line_dialog_title">请输入装订线宽度</string>
+    <string name="printer_print_bookbinding_line_position">设置装订线位置</string>
+    <string name="printer_print_bookbinding_line_position_summary">装订线位置：</string>
+    <string name="printer_print_bookbinding_line_position_dialog_title">选择装订线位置</string>
+    <string name="printer_print_bookbinding_line_position_left">左装订线</string>
+    <string name="printer_print_bookbinding_line_position_top">上装订线</string>
+    <string name="printer_print_bookbinding_line_position_right">右装订线</string>
+    <string name="printer_print_bookbinding_line_position_bottom">下装订线</string>
+    <string-array name="printer_print_bookbinding_line_position_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="printer_print_bookbinding_line_position_list">
+        <item>@string/printer_print_bookbinding_line_position_left</item>
+        <item>@string/printer_print_bookbinding_line_position_top</item>
+        <item>@string/printer_print_bookbinding_line_position_right</item>
+        <item>@string/printer_print_bookbinding_line_position_bottom</item>
+    </string-array>
+    <string name="printer_print_picture_property">图片位置属性</string>
+    <string name="printer_print_picture_property_summary">设置图片在打印时候显示属性</string>
+    <string name="printer_print_picture_property_dialog_title">请选择图片显示属性</string>
+    <string name="printer_print_picture_property_one">按比例原始显示</string>
+    <string name="printer_print_picture_property_two">按比例铺满显示</string>
+    <string name="printer_print_picture_property_three">不按比例铺满显示</string>
+    <string-array name="printer_print_picture_property_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="printer_print_picture_property_list">
+        <item>@string/printer_print_picture_property_one</item>
+        <item>@string/printer_print_picture_property_two</item>
+        <item>@string/printer_print_picture_property_three</item>
+    </string-array>
+    <string name="printer_other_prefs_category">其他</string>
+    
+    
+    <!-- 添加打印机界面  -->
+    <string name="printer_add_devices_toolbar_text">添加打印机</string>
+    <string name="printer_add_devices_button_add">添加打印机</string>
+    
+    
+    <!-- 蓝牙  -->
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_found">No devices found</string>
+    <string name="bluetooth_seach_devices_toolbar_text">蓝牙--搜索设备</string>
+    
+    
+    <!-- 蓝牙打印  -->
+    <string name="preview_printer_bluetooth_default_device_invalid">蓝牙默认适配器不可用</string>
+    <string name="preview_printer_bluetooth_open">打开蓝牙</string>
+    <string name="preview_printer_bluetooth_open_success">蓝牙打开成功</string>
+    <string name="preview_printer_bluetooth_socket_lose">蓝牙失去连接</string>
+    <string name="preview_printer_bluetooth_socket_connect_failed">蓝牙连接失败</string>
+    <string name="preview_printer_bluetooth_socket_connect_success">蓝牙连接成功</string>
+    <string name="preview_printer_bluetooth_socket_connecting">蓝牙连接中……</string>
+    <!-- menu 图片打印预览   -->
+    <string name="preview_printer_menu_connect_title">连接</string>
+    <string name="preview_printer_menu_connect_title_no">断开</string>
+    <string name="preview_printer_menu_title">打印预览</string>
+    <string name="preview_printer_view_hint_print_before">打印机未连接，请在右上角点击连接按钮或者按menu菜单键，打开连接！！！</string>
+    <!-- usb打印  -->
+    <string name="preview_printer_usb_get_device_fd">获得设备</string>
+    <string name="preview_printer_usb_request_device_permissions">请求操作usb设备权限</string>
+    <string name="preview_printer_usb_acquice_device_permissions">获得操作usb设备权限</string>
+    <string name="preview_printer_usb_device_open">打开设备</string>
+</resources>

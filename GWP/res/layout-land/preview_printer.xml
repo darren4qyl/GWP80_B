@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:image="http://schemas.android.com/apk/res/com.printshare"
+    xmlns:circle="http://schemas.android.com/apk/res/com.printshare"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.image.ImageBrowse
+        android:id="@+pp/horizon_listview"
+        android:layout_width="84dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        image:ListOrientation="vertical"
+        image:ValuesEqualWidthOrHeight="84"  >
+    </com.image.ImageBrowse>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@pp/horizon_listview" >
+		<ImageView
+            android:id="@+pp/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/preview_print_bg"
+            android:scaleType="fitXY" />
+        <com.image.util.ImageViewOperation
+            android:id="@+pp/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="true" />
+    </RelativeLayout>
+<FrameLayout
+        android:id="@+id/main_circle_layout_FrameLayout"
+        android:layout_width="@dimen/bluetooth_print_circle_menu_width"
+        android:layout_height="@dimen/bluetooth_print_circle_menu_height"
+        android:visibility="invisible" >
+
+        <com.circlemenu.CircleLayout
+            android:id="@+id/main_circle_layout"
+            android:layout_width="@dimen/bluetooth_print_circle_menu_width"
+            android:layout_height="@dimen/bluetooth_print_circle_menu_height"
+            android:layout_gravity="center_horizontal"
+            circle:firstChildPosition="South"
+            circle:isRotating="true"
+            circle:rotateToCenter="false" >
+
+            <!-- circle:circleBackground="@drawable/green"  > -->
+
+			<com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_fangda"
+                circle:name="放大"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_fangda"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_fangda" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="放大"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+            <com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_suoxiao"
+                circle:name="缩小"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_suoxiao"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_suoxiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="缩小"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+
+            <com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_xiangshangfanye"
+                circle:name="上一页"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_xiangshangfanye"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_shangyiye" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="上一页"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+
+            <com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_xiangxiafanye"
+                circle:name="下一页"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_xiangxiafanye"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_xiayiye" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="下一页"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+
+            <com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_zhiwenqianming"
+                circle:name="指纹签名"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_zhiwenqianming"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_zhiwenqianming" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="指纹签名"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+
+            <com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_shouxieqianming"
+                circle:name="手写签名"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_shouxieqianming"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_shouxieqianming" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="手写签名"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+
+            <com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_dayindangqianye"
+                circle:name="打印当前页"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_dayindangqianye"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_dangyindangqianye" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="打印当前页"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+
+            <com.circlemenu.CircleImageView
+                android:id="@+id/laybtn_quanbudayin"
+                circle:name="全部打印"
+                android:layout_width="@dimen/bluetooth_print_circle_menu_child_width"
+                android:layout_height="@dimen/bluetooth_print_circle_menu_child_height"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_quanbudayin"
+                    android:layout_width="@dimen/bluetooth_print_circle_menu_child_icon_width"
+                    android:layout_height="@dimen/bluetooth_print_circle_menu_child_icon_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bluetooth_print_dangyinquanbuye" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="全部打印"
+                    android:textSize="@dimen/text_size" />
+            </com.circlemenu.CircleImageView>
+        </com.circlemenu.CircleLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center" >
+
+
+        <ImageView
+            android:layout_width="@dimen/bluetooth_print_circle_menu_icon2_width"
+            android:layout_height="@dimen/bluetooth_print_circle_menu_icon2_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bluetooth_print_circlemainmenu" />
+    </RelativeLayout>
+</RelativeLayout>

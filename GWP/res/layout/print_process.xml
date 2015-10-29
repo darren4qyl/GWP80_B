@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login_div"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/printer_add_devices" />
+
+            <TextView
+                android:id="@+id/title_left_text"
+                style="?android:attr/windowTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/title_line" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/transparent" >
+
+            <RelativeLayout
+                android:id="@+id/search_progress_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wait_dialog_bg" >
+
+                <ImageView
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tp_search_list_normal" />
+
+                <com.printshare.widget.VerticalProgressBar
+                    android:id="@+id/circle_progress_percentage"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/circle_progressbar_layer" >
+                </com.printshare.widget.VerticalProgressBar>
+
+                <TextView
+                    android:id="@+id/percentage_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/STR_PERCENT"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/big_text_size" />
+
+                <ImageView
+                    android:id="@+id/search_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/wait_dialog_anim" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/PrintProcessShowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="tesads" />
+
+        <Button
+            android:id="@+id/btnCancelPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="cancel" />
+    </LinearLayout>
+
+</RelativeLayout>
